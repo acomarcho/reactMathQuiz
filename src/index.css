@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+:root {
+  --clr-white: #fff;
+  --clr-bg: #6a5be2;
+  --clr-bg-light: #8e84e2;
+  --clr-black: #000;
+  --clr-light: #e9cefc;
+  --transition: all 0.3s linear;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  background: var(--clr-bg);
+  display: grid;
+  place-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  max-width: 320px;
+  max-height: 568px;
+  padding: 0 16px;
+  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.5);
+}
+
+/* HOME */
+.home-title {
+  margin-top: 34px;
+}
+
+.home-title p {
+  font-weight: 600;
+  color: var(--clr-light);
+  font-size: 14px;
+}
+
+.home-title h4 {
+  font-weight: 700;
+  color: var(--clr-white);
+  font-size: 24px;
+}
+
+.home-hero {
+  margin-top: 34px;
+  color: var(--clr-white);
+  font-size: 28px;
+  position: relative;
+}
+
+.home-hero::before {
+  position: absolute;
+  content: "";
+  top: -15px;
+  left: -16px;
+  width: 240px;
+  height: 120px;
+  background: var(--clr-bg-light);
+}
+
+.home-hero h3 {
+  position: relative;
+}
+
+.home-btn-container {
+  margin-top: 45px;
+  display: grid;
+  row-gap: 15px;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 21px 16px;
+  align-items: center;
+  background: var(--clr-white);
+  border-radius: 15px;
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  color: var(--clr-bg);
+  transform: scale(1.02);
+  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.5);
+}
+
+.btn-icon {
+  font-size: 1.5rem;
+  color: var(--clr-bg-light);
+}
+
+.home-info {
+  margin-top: 15px;
+  color: var(--clr-light);
+  font-size: 12px;
+}
+
+/* ADDITION */
+
+.addition-title {
+  margin-top: 38px;
+  text-align: center;
+  color: white;
+}
+
+.addition-title h4 {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.addition-title p {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--clr-light);
+}
+
+.addition-btn-container {
+  margin-top: 24px;
+  display: grid;
+  row-gap: 15px;
+}
+
+.btn-back {
+  height: 43px;
+  width: 58px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  background: #f69e58;
+  transition: var(--transition);
+  margin-top: 18px;
+  font-size: 1.5rem;
+}
+
+.btn-back:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.back-icon {
+  color: white;
+}
+
+/* ADDITION GAME */
+
+.addition-game-title {
+  margin-top: 38px;
+  text-align: center;
+}
+
+.addition-game-title h4 {
+  font-size: 34px;
+  color: white;
+}
+
+.addition-game-title p {
+  font-size: 14px;
+  color: var(--clr-light);
+}
+
+.addition-game-hero {
+  display: grid;
+  place-items: center;
+  background: white;
+  border-radius: 15px;
+  margin-top: 24px;
+  padding: 34px 0;
+}
+
+.addition-game-hero h1 {
+  font-size: 40px;
+}
+
+.addition-game-form {
+  margin-top: 21px;
+  display: grid;
+  grid-template-columns: auto 59px;
+  column-gap: 16px;
+}
+
+.input-form {
+  height: 43px;
+  border-radius: 36px;
+  text-align: center;
+  border: none;
+  font-size: 16px;
+  background: #5b4cc3;
+  color: white;
+}
+
+.btn-submit {
+  background: #5b4cc3;
+  border-radius: 31px;
+  outline: 0;
+  border: 0;
+  display: grid;
+  place-items: center;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  transform: scale(1.1);
+}
+
+.submit-icon {
+  color: white;
+  font-size: 1.5rem;
+  transition: var(--transition);
+}
+
+.btn-submit:hover .submit-icon {
+  color: var(--clr-light);
+}
+
+.addition-game-info {
+  margin-top: 18px;
+}
+
+.addition-game-info p {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.addition-game-info p.alert {
+  color: #ffba7a;
+}
+.addition-game-info p.alert.correct {
+  color: #6ad3cc;
+}

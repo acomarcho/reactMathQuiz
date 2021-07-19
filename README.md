@@ -1,6 +1,6 @@
 # Try this project out!
 
-You can try the project out at [Netlify](https://aco-math-quiz.netlify.app/)
+You can try the project out at [Netlify](https://aco-math-quiz.netlify.app/).
 
 # Getting Started with Create React App
 

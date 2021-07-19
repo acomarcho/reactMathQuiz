@@ -227,6 +227,8 @@ a {
 .btn-submit {
   background: #5b4cc3;
   border-radius: 31px;
+  height: 43px;
+  width: 59px;
   outline: 0;
   border: 0;
   display: grid;
